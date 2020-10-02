@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".OTP_Screen">
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textinput_phno"
+        android:layout_width="250dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="@dimen/default_margin"
+        android:background="@color/colorWhiteGray"
+        android:gravity="center_horizontal"
+        android:hint="Enter 6 digit OTP"
+        android:inputType="number"
+        android:maxLength="10"
+        android:padding="5dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorWhiteGray"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="@dimen/left_widget_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="@dimen/default_margin"
+        android:text="@string/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textinput_phno" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

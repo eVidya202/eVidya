@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Signup">
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="@dimen/left_widget_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:padding="5dp"
+        android:text="@string/full_name"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textinput_username"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textinput_username"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:background="@color/colorWhiteGray"
+        android:hint="Enter your full name"
+        android:inputType="text"
+        android:padding="5dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorWhiteGray"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toEndOf="@+id/username"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mobile_no"
+        android:layout_width="@dimen/left_widget_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:padding="5dp"
+        android:text="@string/phone_no"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textinput_mobileno"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textinput_mobileno"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:background="@color/colorWhiteGray"
+        android:hint="Enter your mobile number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:padding="5dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorWhiteGray"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/mobile_no"
+        app:layout_constraintTop_toBottomOf="@+id/textinput_username" />
+
+    <TextView
+        android:id="@+id/email_id"
+        android:layout_width="@dimen/left_widget_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:text="@string/email"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textinput_emailid"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textinput_emailid"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:background="@color/colorWhiteGray"
+        android:hint="Enter your email address"
+        android:inputType="textEmailAddress"
+        android:padding="5dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorWhiteGray"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/email_id"
+        app:layout_constraintTop_toBottomOf="@+id/textinput_mobileno" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/left_widget_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="@dimen/default_margin"
+        android:text="@string/signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textinput_emailid" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:text="Already have an account ?"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="@dimen/left_widget_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="@string/login"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
